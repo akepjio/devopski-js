@@ -10,7 +10,11 @@ describe('AppComponent', () => {
       ],
       declarations: [
         AppComponent
+        
       ],
+      schemas: [
+       NO_ERRORS_SCHEMA
+      ]
     }).compileComponents();
   });
 
@@ -20,11 +24,11 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Devopski'`, () => {
+  it(`should have as title 'stickerz'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Devopski');
-  });
+    expect(app.title).toEqual('stickerz');
+  }));
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
