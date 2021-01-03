@@ -10,7 +10,8 @@
     "e2e": "ng e2e",
     "update-webdriver": "webdriver-manager update",
     "start-webdriver": "webdriver-manager start",
-    "protractor": "protractor conf.js"
+    "protractor": "protractor conf.js",
+    "karma-start": "karma start"
   },
   "private": true,
   "dependencies": {
