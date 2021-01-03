@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "update-webdriver": "webdriver-manager update",
     "start-webdriver": "webdriver-manager start",
-    "protractor": "protractor config.js"
+    "protractor": "protractor conf.js"
   },
   "private": true,
   "dependencies": {
