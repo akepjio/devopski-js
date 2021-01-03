@@ -4,7 +4,7 @@
 module.exports = function (config) {
   config.set({
     basePath: '',
-    frameworks: ['jasmine', '@angular-devkit/build-angular'],
+    frameworks: ['jasmine'],
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
@@ -31,6 +31,7 @@ module.exports = function (config) {
     outputDir: 'karma-results',
     outputFile: 'karma-results.xml'
      },
+    port: 9876,
     browsers: ['Chrome'],
     singleRun: true
   });
