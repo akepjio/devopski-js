@@ -1,0 +1,16 @@
+@import "../scss/variables.scss";
+@import "../scss/mixin.scss";
+
+.banner {
+    height: 25rem;
+    background: url('/assets/images/test.png');
+    background-size: cover;
+}
+button {
+    @include fantaButton
+}
+.transi {
+    background-color: darken($color-primary, 20%);
+    height: 0.01rem;
+    width: 20vw;
+}

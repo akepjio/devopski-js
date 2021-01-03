@@ -1,0 +1,15 @@
+@import "../scss/variables";
+
+.navbar {
+    background-color: $color-primary;
+    -webkit-box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.44);
+-moz-box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.44);
+box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.44);
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    .dropdown-item {
+        color: black;
+    }
+}

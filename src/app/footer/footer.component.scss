@@ -1,0 +1,24 @@
+@import "../scss/variables.scss";
+
+footer {
+    h3 {
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+    a {
+        text-decoration: none;
+        color: inherit; 
+    }
+    ul {
+        list-style: none;
+    }
+    .socialBar {
+        background-color: $color-primary;
+    }
+    .footerNav {
+        background-color: darken($color-primary, 20%);
+        ul {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@mixin fantaButton {
+    background-color: $color-primary;
+    color: white;
+    border-radius: unset;
+    &:hover {
+        color: white;
+        background-color: darken($color-primary, 5%);
+    }
+}

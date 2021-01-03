@@ -1,0 +1,24 @@
+@import "../scss/variables.scss";
+
+form {
+    background-color: $color-primary;
+    border: black;
+    .dropdown-toggle {
+        color: white;
+    }
+    .inputSearchBar {
+        position: relative;
+        button {
+            position: absolute;
+            right: 0;
+            border: none;
+            background-color: white;
+        }
+        input {
+            font-weight: bold;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
