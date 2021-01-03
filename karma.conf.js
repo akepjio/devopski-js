@@ -10,7 +10,6 @@ module.exports = function (config) {
       require('karma-chrome-launcher'),
       require('karma-jasmine-html-reporter'),
       require('karma-coverage'),
-      require('@angular-devkit/build-angular/plugins/karma'),
       require('karma-junit-reporter')
     ],
     client: {
@@ -27,7 +26,7 @@ module.exports = function (config) {
         { type: 'text-summary' }
       ]
     },
-    reporters: ['progress', 'kjhtml', 'junit'],
+    reporters: ['junit'],
     junitReporter: {
     outputDir: 'karma-results',
     outputFile: 'karma-results.xml'
