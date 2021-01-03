@@ -33,11 +33,9 @@ module.exports = function (config) {
     outputFile: 'karma-results.xml'
      },
     port: 9876,
-    #colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: false,
     browsers: ['Chrome'],
     singleRun: true
-    #restartOnFileChange: true
   });
 };
