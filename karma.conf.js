@@ -26,7 +26,7 @@ module.exports = function (config) {
         { type: 'text-summary' }
       ]
     },
-    reporters: ['junit'],
+    reporters: ['junit','dots', 'progress', 'coverage'],
     junitReporter: {
     outputDir: 'karma-results',
     outputFile: 'karma-results.xml'
