@@ -26,13 +26,16 @@ module.exports = function (config) {
         { type: 'text-summary' }
       ]
     },
-    reporters: ['junit','dots', 'progress', 'coverage'],
+    reporters: ['junit','dots', 'progress', 'coverage', 'html'],
     junitReporter: {
     outputDir: 'karma-results',
     outputFile: 'karma-results.xml'
      },
     port: 9876,
     browsers: ['Chrome'],
-    singleRun: false
+    singleRun: false,
+    autoWatch: true,
+    logLevel: config.LOG_ERROR,
+    colors: true
   });
 };
