@@ -10,7 +10,8 @@ module.exports = function (config) {
       require('karma-chrome-launcher'),
       require('karma-jasmine-html-reporter'),
       require('karma-coverage'),
-      require('karma-junit-reporter')
+      require('karma-junit-reporter'),
+      require('karma-spec-reporter')
     ],
     client: {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
@@ -26,7 +27,7 @@ module.exports = function (config) {
         { type: 'text-summary' }
       ]
     },
-    reporters: ['junit','dots', 'progress', 'coverage'],
+    reporters: ['junit','dots', 'progress', 'coverage', 'spec'],
     junitReporter: {
     outputDir: 'karma-results',
     outputFile: 'karma-results.xml'
